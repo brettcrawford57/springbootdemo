@@ -5,13 +5,13 @@
     <title>Create Cat</title>
 </head>
 <body>
-
-<form th:action="@{/create}" th:method="post" th:object="${cat}">
-    Cat Type:
-    <input th:field="*{catType}"/>
-    <br />
-    <input type="submit"/>
-</form>
-
+<div th:fragment="createcat">
+    <form th:action="@{/create}" th:method="post" th:object="${cat}">
+        Cat Type:
+        <input th:field="*{catType}"/>
+        <br/>
+        <input type="submit"/>
+    </form>
+</div>
 </body>
 </html>

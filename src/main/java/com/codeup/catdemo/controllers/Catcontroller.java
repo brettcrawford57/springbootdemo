@@ -39,5 +39,11 @@ public class Catcontroller {
         return "/Cats/show";
     }
 
+    @GetMapping("/index")
+    public String showAllCats(Model model){
+        model.addAttribute("cat", catRepo.findAll());
+        return "/Cats/index";
+    }
+
 }
 
