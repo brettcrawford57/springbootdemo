@@ -1,5 +1,7 @@
 package com.codeup.catdemo.models;
 
+//import javax.persistence.*;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,7 +9,7 @@ import javax.persistence.*;
 public class Cat {
 
     @Id
-    @Column(nullable = false)
+//    @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long catId;
 

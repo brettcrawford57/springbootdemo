@@ -4,10 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-public class catcontroller {
-
     @Controller
-    class HelloCatController {
+    public class Catcontroller {
 
         @GetMapping("/hellocat")
         @ResponseBody
@@ -15,4 +13,4 @@ public class catcontroller {
             return "Hello kitty cat!";
         }
     }
-}
+
